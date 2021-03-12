@@ -1,0 +1,197 @@
+header {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+}
+
+.header_wrap {
+    width: 1530px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.header_wrap > h1 {
+    float: left;
+    padding-top: 10px;
+}
+
+.header_wrap > h1 > a > img {
+    height: 35px;
+}
+
+.btn_nav {
+    margin-top: 15px;
+    float: right;
+    width: 40px;
+    height: 70px;
+}
+
+.bin_nav > a {
+    width: 100%;
+    height: 100%;
+}
+
+.btn_nav > a > div {
+    width: 30px;
+    height: 5px;
+    margin: 3px 0px;
+    background-color: black;
+    float: right;
+}
+
+nav > ul {
+    text-align: center;
+    line-height: 70px;
+}
+
+/*line height:줄간격으로 사용, 박스의 글자가 가운데로 위치하게 함. 박스의 높이값과 동일하게 주면 됨.*/
+
+
+nav > ul > li {
+    display: inline-block;
+    position: relative;
+}
+nav > ul > li > a {
+    display: block;
+    color: #000;
+    padding: 0 30px;
+    font-weight: bold;
+}
+
+nav > ul > li:hover .depth2 {
+    display: block;
+}
+
+.depth2 {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    min-width: 100%;
+    text-align: left;
+    border: 1px solid #dcdcdc;
+    padding: 20px 34px;
+    box-sizing: border-box;
+}
+
+
+.depth2 > li > a {
+    display: block;
+    line-height: 40px;
+    font-weight: bold;
+    color: #646464;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+/***************footer*****************/
+footer {
+    width: :100%;
+    background-color: #000;
+}
+
+.footer_wrap {
+    width: 1520px;
+    margin: auto;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.footer_wrap > h1 {
+    width: 192px;
+}
+
+.footer_wrap > h1 > img {
+    width: 100%;
+}
+
+.add {
+    padding-left: 50px;
+    font-size: 14px;
+    color: #707070;
+    line-height: 20px;
+}
+
+.copy > ul {
+    color: #707070;
+    font-weight: bold;
+}
+
+.copy > ul > li > a {
+    font-size: 14px;
+    color: #707070;
+    line-height: 40px;
+}
+
+.copy > p {
+    font-size: 14px;
+    color: #707070;
+    line-height: 20px;
+}
+
+
+
+
+
+
+/*******1530px 이하*********/
+@media only screen and (max-width: 1530px) {
+    .header_wrap {
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+
+    .footer_wrap {
+        width: 100%;
+    }
+}
+
+
+
+/*********1100px 이하****************/
+@media only screen and (max-width: 1170px) {}
+
+/*********1000px 이하****************/
+@media only screen and (max-width: 1000px) {
+    nav {
+        display: none;
+    }
+}
+
+/*********900px 이하****************/
+@media only screen and (max-width: 970px) {}
+
+
+/*********767px 이하****************/
+@media only screen and (max-width: 767px) {
+    .footer_wrap {
+        text-align: center;
+    }
+
+    .add {
+        display: inline-block;
+    }
+}
+
+.copy {
+    width: 350px;
+}
+
+.copy > ul {
+    float: right;
+}
+
+.copy > ul > li {
+    display: inline-block;
+}
+}
