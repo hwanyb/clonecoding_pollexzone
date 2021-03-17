@@ -1,13 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+.bigNav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #00305b;
+    z-index: 99999999999999;
+    display: none;
+}
+
+.bigNav > .top {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 1500px;
+}
+
+.bigNav > .top > .logo {
+    margin-top: 15px;
+}
+
+.bigNav > .contents {
+    width: 1500px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.bigNav > .contents > ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bigNav > .contents > ul > li > span {
+    display: block;
+    font-size: 15px;
+    color: #39b919;
+    font-weight: 500;
+    margin-bottom: 29px;
+}
+
+.bigNav > .contents > ul > li > h2 > a {
+    font-size: 37px;
+    color: #466c8f;
+    font-weight: 600;
+}
+
+.bigNav > .contents > ul > li > ul {
+    margin-top: 50px;
+}
+
+.bigNav > .contents > ul > li > ul > li > a {
+    font-size: 18px;
+    opacity: 0.9;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+.bigNav #firstdiv {
+    position: relative;
+    top: 0;
+}
+
+.bigNav #seconddiv {
+    position: relative;
+    left: 0;
+}
+
+.bigNav #lastdiv {
+    position: relative;
+    bottom: 0;
+}
+
 header {
     width: 100%;
     height: 70px;
     background-color: white;
     position: fixed;
-    z-index: 999;
+    z-index: 999999999;
+    top: -75px;
 }
 
 .header_wrap {
-    width: 1530px;
+    width: 1500px;
     height: 70px;
     margin: 0 auto;
 }
@@ -24,21 +101,28 @@ header {
 .btn_nav {
     margin-top: 15px;
     float: right;
-    width: 40px;
+    width: 23px;
     height: 70px;
+    padding: 5px 0;
+    overflow: hidden;
 }
 
-.bin_nav > a {
+.btn_nav > a {
     width: 100%;
     height: 100%;
+    display: block;
 }
 
 .btn_nav > a > div {
-    width: 30px;
-    height: 5px;
-    margin: 3px 0px;
+    width: 23px;
+    height: 3px;
+    margin: 2px 0px;
     background-color: black;
     float: right;
+}
+
+.btn_nav > a > #lastdiv {
+    width: 15px;
 }
 
 nav > ul {
@@ -52,12 +136,6 @@ nav > ul {
 nav > ul > li {
     display: inline-block;
     position: relative;
-}
-nav > ul > li > a {
-    display: block;
-    color: #000;
-    padding: 0 30px;
-    font-weight: bold;
 }
 
 nav > ul > li:hover .depth2 {
@@ -75,20 +153,31 @@ nav > ul > li:hover .depth2 {
     border: 1px solid #dcdcdc;
     padding: 20px 34px;
     box-sizing: border-box;
+
 }
 
 
 .depth2 > li > a {
     display: block;
     line-height: 40px;
-    font-weight: bold;
+    font-weight: 400;
     color: #646464;
     font-size: 15px;
     white-space: nowrap;
+
 }
 
+.depth2 > li :hover {
+    font-weight: bold;
+    color: #00305b;
+}
 
-
+nav > ul > li > a {
+    display: block;
+    color: #000;
+    padding: 0 30px;
+    font-weight: bold;
+}
 
 
 
@@ -99,42 +188,49 @@ footer {
 }
 
 .footer_wrap {
-    width: 1520px;
+    width: 1500px;
     margin: auto;
     padding: 50px 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer_wrap > h1 {
-    width: 192px;
-}
-
-.footer_wrap > h1 > img {
-    width: 100%;
+.footer_wrap>.logo{
+    margin-right: 50px;
 }
 
 .add {
-    padding-left: 50px;
     font-size: 14px;
     color: #707070;
-    line-height: 20px;
+}
+.copy{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
 }
 
 .copy > ul {
     color: #707070;
     font-weight: bold;
+    display: flex;
+    font-size: 14px;
+    justify-content: flex-end;
+
 }
 
 .copy > ul > li > a {
-    font-size: 14px;
     color: #707070;
-    line-height: 40px;
+    display: inline-block;
+    text-align: right;
+    padding: 0 5px;
 }
-
-.copy > p {
+.copy > ul > li:nth-child(2) > a{
+    color: #39b919;
+}
+.copy > .p {
     font-size: 14px;
     color: #707070;
-    line-height: 20px;
+/*    white-space: nowrap;*/
 }
 
 
@@ -143,23 +239,72 @@ footer {
 
 
 /*******1530px 이하*********/
-@media only screen and (max-width: 1530px) {
+@media only screen and (max-width: 1500px) {
     .header_wrap {
         width: 100%;
         padding: 0 30px;
-        box-sizing: border-box;
     }
 
 
     .footer_wrap {
         width: 100%;
+        padding: 50px 30px;
     }
+    .bigNav > .top {
+     width: 100%;
+        padding: 0 30px;
+}
+
+.bigNav > .contents {
+    width: 100%;
+    padding: 0 30px;
+}
 }
 
 
 
 /*********1100px 이하****************/
-@media only screen and (max-width: 1170px) {}
+@media only screen and (max-width: 1170px) {
+    .footer_wrap{
+        flex-direction: column;
+    }
+    .copy{
+        margin: 20px 0;
+        text-align: left;
+    }
+    .add{
+        margin: 20px 0;
+    }
+    .copy > ul {
+    justify-content: flex-start;
+
+}
+    .bigNav> .contents{
+        margin-top: 180px;
+    }
+    .bigNav> .contents > ul{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .bigNav> .contents >ul>li>h2>a{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .bigNav> .contents >ul>li>h2>a:hover{
+        color: #fff;
+    }
+    .bigNav> .contents >ul>li>span{
+        display: none;
+    }
+    .bigNav> .contents >ul>li>ul{
+        display: none;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
 
 /*********1000px 이하****************/
 @media only screen and (max-width: 1000px) {
@@ -174,24 +319,4 @@ footer {
 
 /*********767px 이하****************/
 @media only screen and (max-width: 767px) {
-    .footer_wrap {
-        text-align: center;
-    }
-
-    .add {
-        display: inline-block;
-    }
-}
-
-.copy {
-    width: 350px;
-}
-
-.copy > ul {
-    float: right;
-}
-
-.copy > ul > li {
-    display: inline-block;
-}
 }

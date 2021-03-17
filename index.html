@@ -4,24 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>pollexzone</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/headerfooter.css">
 </head>
 
 <body>
-
+    <div class="bigNav">
+        <div class="top">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo_white_top.png" alt="logo"></a>
+            </div>
+            <div class="btn_nav">
+                <a href="#">
+                    <div id="firstdiv"></div>
+                    <div id="seconddiv"></div>
+                    <div id="lastdiv"></div>
+                </a>
+            </div>
+        </div>
+        <div class="contents">
+            <ul>
+                <li>
+                    <span>01</span>
+                    <h2><a href="overview.html">폴렉스존 소개</a></h2>
+                    <ul>
+                        <li><a href="overview.html">기업소개</a></li>
+                        <li><a href="#">주요고객사</a></li>
+                        <li><a href="#">센터현황</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>02</span>
+                    <h2><a href="business.html">사업영역</a></h2>
+                    <ul>
+                        <li><a href="business.html">사업영역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>03</span>
+                    <h2><a href="professional_operating_organization.html">핵심경쟁력</a></h2>
+                    <ul>
+                        <li><a href="professional_operating_organization.html">전문 운영조직</a></li>
+                        <li><a href="#">센터운영 및 컨설팅</a></li>
+                        <li><a href="#">시스템 &amp 인프라</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>04</span>
+                    <h2><a href="#">폴렉스존 소식</a></h2>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">인증 및 수상내역</a></li>
+                        <li><a href="#">고객문의</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>05</span>
+                    <h2><a href="#">인재채용</a></h2>
+                    <ul>
+                        <li><a href="#">인재상</a></li>
+                        <li><a href="#">채용안내</a></li>
+                        <li><a href="#">채용공고</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
     <header>
+
         <div class="header_wrap">
             <h1><a href="index.html">
                     <img src="img/logo.png">
                 </a></h1>
             <div class="btn_nav">
                 <a href="#">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div id="firstdiv"></div>
+                    <div id="seconddiv"></div>
+                    <div id="lastdiv"></div>
                 </a>
             </div>
             <nav>
@@ -43,12 +106,12 @@
                             <ul class="depth2">
                                 <li><a href="professional_operating_organization.html">전문 운영조직</a></li>
                                 <li><a href="#">센터운영 및 컨설팅</a></li>
-                                <li><a href="#">시스템 & 인프라</a></li>
+                                <li><a href="#">시스템 &amp 인프라</a></li>
                             </ul>
                         </a></li>
-                    <li><a href="notice.html">폴렉스존 소식
+                    <li><a href="#">폴렉스존 소식
                             <ul class="depth2">
-                                <li><a href="notice.html">공지사항</a></li>
+                                <li><a href="#">공지사항</a></li>
                                 <li><a href="#">인증 및 수상내역</a></li>
                                 <li><a href="#">고객문의</a></li>
                             </ul>
@@ -67,16 +130,15 @@
 
 
 
-
     <main>
         <section class="mainsec1">
             <div class="svg">POLEXZONE</div>
             <article>
-                <p class="float_l">
+                <p class="mainp">
                     전문성과 풍부한 경험이 있는 운영 컨설팅,<br>
                     지속적인 성장과 질 높은 서비스
                 </p>
-                <div class="btn_more float_r">
+                <div class="btn_more">
                     <a href="#">
                         More +
                     </a>
@@ -98,7 +160,7 @@
                             <div class="cont_txt">
                                 <h4>상담운영 아웃소싱</h4>
                                 <p>
-                                    In & Out Bound Service 운영진단 서비스 / 모니터링, 상담조직 채용 및 교육서비스
+                                    In &amp Out Bound Service 운영진단 서비스 / 모니터링, 상담조직 채용 및 교육서비스
                                 </p>
 
                             </div>
@@ -132,7 +194,7 @@
                             <a href="#">
                                 <div class="cont_txt">
                                     <h4>마케팅 CRM 전략지원</h4>
-                                    <p>In & Out Bound Service 상담조직 채용 및<br>교육서비스</p>
+                                    <p>In &amp Out Bound Service 상담조직 채용 및<br>교육서비스</p>
                                 </div>
                             </a>
                         </div>
@@ -150,55 +212,58 @@
                 </div>
             </article>
         </section>
-        <section class="mainsec4">
+        <section class="mainsec4 ">
             <h2>핵심경쟁력</h2>
-            <article class="cont_img">
-                <div>
-                    <div class="list_item">
-                        <img src="img/mc3_img1.jpg">
+
+            <article class="cont_img swiper-container2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="list_item">
+                            <img src="img/mc3_img1.jpg">
+                        </div>
+                        <div class="list_txt">
+                            <h4>전문 운영 조직</h4>
+                            <p>
+                                분야별 전문화된 운영조직 및 인력 운영으로 효율적인 운영관리
+                            </p>
+                        </div>
+                        <div class="btn_list">
+                            <a href="#">more +</a>
+                        </div>
                     </div>
-                    <div class="list_txt">
-                        <h4>전문 운영 조직</h4>
-                        <p>
-                            분야별 전문화된 운영조직 및 인력 운영으로 효율적인 운영관리
-                        </p>
+                    <div class="swiper-slide">
+                        <div class="list_item">
+                            <img src="img/mc3_img2.jpg">
+                        </div>
+                        <div class="list_txt">
+                            <h4>센터운영 및 컨설팅</h4>
+                            <p>
+                                폴렉스존의 운영 노하우로 고객만족 실현
+                            </p>
+                        </div>
+                        <div class="btn_list">
+                            <a href="#">more +</a>
+                        </div>
                     </div>
-                    <div class="btn_list">
-                        more +
-                    </div>
-                </div>
-                <div>
-                    <div class="list_item">
-                        <img src="img/mc3_img2.jpg">
-                    </div>
-                    <div class="list_txt">
-                        <h4>센터운영 및 컨설팅</h4>
-                        <p>
-                            폴렉스존의 운영 노하우로 고객만족 실현
-                        </p>
-                    </div>
-                    <div class="btn_list">
-                        more +
-                    </div>
-                </div>
-                <div>
-                    <div class="list_item">
-                        <img src="img/mc3_img3.jpg">
-                    </div>
-                    <div class="list_txt">
-                        <h4>시스템 & 인프라</h4>
-                        <p>
-                            IP기반의 전용컨텍센터 자체보유 및 실시간 모니터링 서비스 제공
-                        </p>
-                    </div>
-                    <div class="btn_list">
-                        more +
+                    <div class="swiper-slide">
+                        <div class="list_item">
+                            <img src="img/mc3_img3.jpg">
+                        </div>
+                        <div class="list_txt">
+                            <h4>시스템 &amp 인프라</h4>
+                            <p>
+                                IP기반의 전용컨텍센터 자체보유 및 실시간 모니터링 서비스 제공
+                            </p>
+                        </div>
+                        <div class="btn_list">
+                            <a href="#">more +</a>
+                        </div>
                     </div>
                 </div>
             </article>
             <article class="cont_txt">
                 <div>
-                    <p>
+
                 </div>
                 <div></div>
                 <div></div>
@@ -209,33 +274,54 @@
 
         </section>
         <section class="mainsec5">
-            <article>
-                <div class="cen_txt float_l">
-                    <p class="green_txt">센터현황</p>
-                    <a href="#">마포센터</a>
-                    <p class="cen_txt_item">폴렉스존의 마포센터는 지하철5호선 역세권에 위치해 있으며, 교통망이 편리하여<br>수도권 및 서울의 우수인력 채용이 용이한 센터입니다.</p>
+
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide mapo">
+                        <div class="cen_txt">
+                            <p class="green_txt">센터현황</p>
+                            <a href="#">마포센터 +</a>
+                            <p class="cen_txt_item">폴렉스존의 마포센터는 지하철5호선 역세권에 위치해 있으며, 교통망이 편리하여<br>수도권 및 서울의 우수인력 채용이 용이한 센터입니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gong">
+                        <div class="cen_txt">
+                            <p class="green_txt">센터현황</p>
+                            <a href="#">공덕센터 +</a>
+                            <p class="cen_txt_item">폴렉스존의 공덕센터는 지하철5, 6호선 및 공항철도 등 교통망이 편리하여<br>
+                                수도권 및 서울의 우수인력 채용이 용이한 센터입니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide seoul">
+                        <div class="cen_txt">
+                            <p class="green_txt">센터현황</p>
+                            <a href="#">서울센터 +</a>
+                            <p class="cen_txt_item">폴렉스존의 서울센터는 고난이도의 Sales Skill을 요구하는 금융,<br>
+                                보험(DCDS)등 Sales를 위해 4대문안에 구축한 유일한 명품콜센터 입니다.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="cen_btn float_r">
-                    <div class="mapo_btn">
-                        <a href="#">
-                            <div class="mapo_img cen_img"></div>
-                            <h4>마포센터</h4>
-                        </a>
-                    </div>
-                    <div class="gong_btn">
-                        <a href="#">
-                            <div class="gong_img cen_img"></div>
-                            <h4>공덕센터</h4>
-                        </a>
-                    </div>
-                    <div class="seoul_btn">
-                        <a href="#">
-                            <div class="seoul_img cen_img"></div>
-                            <h4>서울센터</h4>
-                        </a>
-                    </div>
+            </div>
+
+            <div class="cen_btn">
+                <div class="mapo_btn">
+                    <div class="mapo_img cen_img"></div>
+                    <h4>마포센터</h4>
                 </div>
-            </article>
+                <div class="gong_btn">
+                    <div class="gong_img cen_img"></div>
+                    <h4>공덕센터</h4>
+                </div>
+                <div class="seoul_btn">
+                    <div class="seoul_img cen_img"></div>
+                    <h4>서울센터</h4>
+                </div>
+            </div>
+
         </section>
         <section class="mainsec6">
             <article>
@@ -275,27 +361,53 @@
 
     <footer>
         <div class="footer_wrap">
-            <h1 class="float_l">
-                <a href="index.html"><img src="img/logo_footer.png"></a>
+            <h1 class="logo">
+                <a href="#"><img src="img/logo_footer.png"></a>
             </h1>
-            <div class="add float_l">
-                <address>주식회사 : 폴렉스존 / 대표자 : 김민수·김민규 / 사업자번호 : 105-87-01019 /<br>주소 : 서울 마포구 마포대로 34 (04174)</address>
+            <div class="add">
+                <address>주식회사 : 폴렉스존 / 대표자 : 김민수·김민규 / 사업자번호 : 105-87-01019 / 주소 : 서울 마포구 마포대로 34 (04174)</address>
                 <div>대표번호 : 070-7600-4925 팩스번호 : 02-322-8176 개인정보보호책임자 : 김민규.</div>
             </div>
 
 
-            <div class="copy float_r float_n">
-                <ul class="float_r float_n">
-                    <li class="float_l"><a href="#">직원전용</a>|</li>
-                    <li class="float_l"><a href="#">개인정보처리방침</a>|</li>
-                    <li class="float_l"><a href="#">문의하기</a></li>
+            <div class="copy">
+                <ul>
+                    <li><a href="#">직원전용</a>|</li>
+                    <li><a href="#">개인정보처리방침</a>|</li>
+                    <li><a href="#">문의하기</a></li>
                 </ul>
-                <p>
-                    Copyright(C)2014 Pollexzone. ALL RIGHTS RESERVED.
-                </p>
+                <div class="p">Copyright(C)2014 Pollexzone. ALL RIGHTS RESERVED.</div>
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/transit.js" type="text/jscript"></script>
+    <script src="js/js.js" type="text/jscript"></script>
+    <script>
+        var swiper2 = new Swiper('.swiper-container2', {
+            slidesPerView: 3,
+            freeMode: false,
+            centeredSlides: true,
+            spaceBetween: 100,
+            centeredSlides: true,
+            initialSlide: 1
+
+        });
+
+
+        var tapToMapo = $(".mapo_btn");
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            }
+
+        });
+
+    </script>
 
 </body>
 
